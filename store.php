@@ -12,7 +12,7 @@ $email = $_POST['visitor_email'];
 echo $name . ' ' . $email . '<br><br>';
         
 if(isset($_POST['visitor_name']) && isset($_POST['visitor_email'])) {
-    $data = $name . ' - ' . $email . '/n';
+    $data = $name . ' - ' . $email .PHP_EOL;
     $ret = file_put_contents('list.txt', $data, FILE_APPEND | LOCK_EX);
     
     if($ret === false) {
