@@ -1,0 +1,58 @@
+body {
+    max-width: 60em;
+    margin: auto;
+}
+
+#masthead {
+    background: #666666;
+    border-radius: 7px;
+    position: relative;
+    top: -1.5em;
+}
+
+#masthead div {
+    padding: 1em;
+}
+
+#masthead p {
+    color: white;
+    font-size: 1.1em;
+    display: inline;
+}
+
+#masthead a {
+    float: right;
+}
+
+#header_name {
+    color: white;
+    font-family: Arial, Times-new-roman, sans-serif;
+    max-width: 288px;
+    margin: 1em auto;
+    font-size: -webkit-xxx-large;
+    clear: both;
+}
+
+/* width adjust */
+@media only screen and (max-width: 62em){
+    body{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+/* masthead adjust */
+@media only screen and (max-width: 346px){
+    #masthead a {
+        float: none;
+    }
+    
+    #masthead p {
+        display: block;
+    }
+    
+    #masthead div {
+        width: 135px;
+        margin: auto;
+    }
+}
